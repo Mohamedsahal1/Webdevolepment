@@ -1,0 +1,21 @@
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+}
+h1 { font-size: 1.8em}
+h2 { font-size: 1.5em}
+h3 { font-size: 1.4em}
+
+p.rood{color: red;
+    font-family: Times New Roman, sans-serif;
+    font-size: 1.2em
+}
+p.blauw{color: blue;
+    font-family: Times New Roman, sans-serif;
+    font-size: 1.2em
+
+}
+p.groen{color: green;
+    font-family: Times New Roman, sans-serif;
+    font-size: 1.2em
+
+}
