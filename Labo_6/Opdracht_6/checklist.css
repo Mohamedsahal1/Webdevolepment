@@ -1,0 +1,13 @@
+
+ul{
+   list-style: none;
+}
+.checklist {
+
+    font-family: system-ui, sans-serif;
+    font-size: medium;
+    font-weight: normal;
+    line-height: 1.1;
+}
+
+
