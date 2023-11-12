@@ -1,0 +1,63 @@
+body {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+
+    
+}
+td, th {
+    border: 1px dashed;
+}
+table {
+    width: 75%;
+    height: 100%;
+    border: 3px solid black;
+    table-layout: fixed;
+    border-collapse: collapse;
+
+    padding: 60px;
+}
+
+
+
+thead {
+    background-color: #00496B;
+    font-weight: bolder;
+}
+tr:nth-of-type(2) > td:first-of-type,
+tr:last-of-type > td:nth-of-type(5),
+tr:last-of-type > td:nth-of-type(6),
+tr:last-of-type > td:nth-of-type(7)
+{
+    background-color: grey;
+}
+
+
+tbody > tr:first-of-type{
+    color: rgb(200, 190, 240);
+    background-color: rgb(35, 37, 70);
+
+}
+
+tr:nth-of-type(3) > td:first-of-type,
+tr:nth-of-type(4) > td:first-of-type,
+tr:nth-of-type(5) > td:first-of-type,
+
+tr:nth-of-type(2) > td:last-of-type,
+tr:nth-of-type(3) > td:last-of-type,
+tr:nth-of-type(4) > td:last-of-type,
+tr:nth-of-type(5) > td:last-of-type,
+tr:last-of-type > td:first-of-type
+
+
+{
+background-color: rgb(255, 220, 220);
+}
+
+{
+background-color: rgb(170, 170, 200);
+}
+
+tr:nth-of-type(4) > td:nth-child(3){
+    background-color: rgb(250, 120, 120);
+}
