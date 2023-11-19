@@ -1,0 +1,94 @@
+html {
+    margin: auto;
+}
+body > article {
+    display: block;
+    box-sizing: border-box;
+    width: 25%;
+    float: right;
+    border:3px solid rgb(167,206,206);
+    text-align: center;
+    padding: 10px;
+}
+body > section {
+    display: block;
+    box-sizing: border-box;
+    width: 70%;
+    float: left;
+
+}
+section, article {
+    font-size: 1.2em;
+    font-family: Verdana sans-serif;
+}
+footer{
+    display: inline-block;
+    vertical-align: bottom;
+
+    font-size: 0.6em;
+    horiz-align: center;
+}
+#guarantee {
+    margin: 30px;
+    padding: 20px;
+    background-color:rgb(167,206,206);
+    color: rgb(68, 68,68);
+    border-style: dashed;
+    border-color: white;
+
+}
+
+section  article > p:nth-of-type(3)::before{
+content: ' \2728'
+}
+
+ul:first-of-type > li {
+    list-style: none;
+
+
+}
+
+li > p {
+    display: inline;
+}
+li:first-of-type p:first-of-type {
+    font-style: italic;
+}
+li:first-of-type p:nth-of-type(2) {
+    font-weight: bold;
+}
+section h1 {
+    color: rgb(0,126,126);
+}
+section h2 {
+    color: rgb(0,126,126);
+}
+
+
+h1 {
+    font-size: 150%;
+}
+h2{
+    font-size: 130%;
+}
+
+article:first-of-type h2:first-of-type {
+    color:darkred;
+}
+article:first-of-type h2:nth-of-type(2) {
+    color: aqua;
+}
+article:first-of-type h2:nth-of-type(3) {
+    color: burlywood;
+}
+
+header {
+    margin: auto;
+    display: block;
+
+}
+a.link:hover{
+    background-color: brown;
+}
+
+
