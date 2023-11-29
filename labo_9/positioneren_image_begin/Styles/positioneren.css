@@ -1,0 +1,44 @@
+html {
+    margin: auto;
+}
+body {
+    box-sizing: border-box;
+
+
+}
+p{
+    text-align: justify;
+    padding: 10px;
+}
+article {
+    display: block;
+    border: solid 2px black;
+    overflow: hidden;
+    margin: 10px 10px 10px;
+    font-size: 1.25em;
+
+
+
+
+
+
+}
+img {
+    margin: 10px;
+}
+article:nth-child(2n+1) img{
+    float: left;
+
+
+
+
+}
+article:nth-child(2n) img {
+
+   float: right;
+
+
+}
+
+
+

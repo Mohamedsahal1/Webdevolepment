@@ -1,0 +1,162 @@
+html {
+    box-sizing: border-box;
+    width: 95%;
+    margin: auto;
+
+
+}
+body {
+
+
+    font-family: Arial, Verdana, sans-serif;
+
+}
+header {
+
+
+}
+
+header {
+    background-image: url("/labo_9/opdrachtairbus/images2/bgsky3.jpg");
+    display: block;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    color:darkblue;
+    position: relative;
+
+
+
+}
+header > p:first-of-type{
+    font-size: 300%;
+    font-weight: bold;
+    font-style: italic;
+
+
+}
+header > p:nth-of-type(2) {
+    font-size: 240%;
+    font-weight: bold;
+
+}
+header > img {
+    padding-right: 90px;
+    padding-bottom: 60px;
+    position: absolute;
+    top:10%;
+    left: 50%;
+
+
+}
+aside {
+
+    display: block;
+    width: 25%;
+    background-color: #dddddd;
+    border: 1px solid #999999;
+    color: #666666;
+    padding: 10px;
+    font-size: 90%;
+    float: right;
+    box-sizing: border-box;
+    position: absolute;
+    overflow: hidden;
+    right: 1.48%;
+    top:245px;
+
+
+}
+
+aside > h3 {
+
+    color: white;
+    background-color: blue;
+    font-size: 120%;
+    text-align: center;
+
+}
+
+
+
+nav {
+    width:75%;
+    box-sizing: border-box;
+
+
+}
+nav > section {
+    display: block;
+    background-color: white;
+    color: black;
+    margin: 20px 30px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+
+
+
+}
+figure:first-of-type {
+    float: left;
+}
+
+
+span:first-of-type {
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+body > section:first-of-type {
+    background-color:#999999;
+    box-sizing: border-box;
+
+    width: 75%;
+    padding-right: 10px;
+}
+
+section > img{
+    width: 180px;
+    height: 180px;
+    border: 1px dashed white;
+    padding: 10px;
+   background-color: white;
+    margin: 20px 21px 20px 20px;
+
+}
+
+body > section:last-of-type {
+    display: inline-block;
+    background-color:#666666;
+    color:white;
+    width: 100%;
+  position: relative;
+    box-sizing: border-box;
+
+}
+
+section:last-of-type > div:first-of-type {
+    padding-left: 120px;
+}
+section:last-of-type > div:last-of-type {
+    padding-left: 120px;
+
+position: absolute;
+bottom:2%;
+left: 50%
+}
+
+li > a:hover {
+    background-color: red;
+}
+
+footer {
+    text-align: center;
+    color: black;
+    background-color: white;
+}
+
+
+
