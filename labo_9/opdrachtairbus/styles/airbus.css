@@ -20,7 +20,7 @@ header {
     background-image: url("/labo_9/opdrachtairbus/images/bgsky3.jpg");
     display: block;
     height: 200px;
-    width: 100%;
+
     text-align: center;
     color:darkblue;
     position: relative;
@@ -62,8 +62,8 @@ aside {
     box-sizing: border-box;
     position: absolute;
     overflow: hidden;
-    right: 1.48%;
-    top:245px;
+    right: 1.49%;
+    top:250px;
 
 
 }
