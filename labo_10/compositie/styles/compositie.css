@@ -1,0 +1,57 @@
+.first {
+
+    Border: solid black;
+    Border-width: 0 7.5px 15px 0px;
+    min-height: 165px;
+    background: rgb(255, 255, 255); }
+
+.second{
+
+    Border: solid black;
+    Border-width: 15px 7.5px 7.5px 0;
+    Min-height: 190px;
+
+    Background: rgb(255, 255, 255);
+}
+
+.third {
+
+Border: solid black;
+    Border-width: 0 0 7.5px 7.5px;
+    background: rgb(220, 40, 26);
+    Min-height: 355px;
+
+}
+
+.fourth{
+
+    Border: solid black;
+    Border-width: 7.5px 7.5px 0 0;
+    Min-height: 150px;
+    Background: rgb(0, 93, 159); }
+
+.fifth {
+
+    Border: solid black;
+    Border-width: 7.5px 7.5px 0 7.5px;
+    Min-height: 150px;
+    Background: rgb(255, 255, 255);
+
+}
+
+.sixth {
+
+    Border: solid black;
+
+    Border-width: 7.5px 0 12.5px 7.5px;
+    Min-height: 75px;
+    Background: rgb(255, 255, 255);
+
+}
+
+.seventh{
+    Border: solid black;
+    Border-width: 12.5px 0 0 7.5px;
+    Min-height: 75px;
+    Background-color: rgb(242, 224, 122);
+}
