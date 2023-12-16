@@ -1,0 +1,100 @@
+html {
+    background-color: #333;
+    font-family: helvetica;
+}
+
+* {
+    padding: 10px;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+
+}
+section {
+    margin: 5px;
+    background-color: white;
+
+}
+
+body {
+    margin: 5px;
+    text-align: center;
+}
+h1 {
+    margin: 0;
+}
+nav > a {
+    border: 1px solid black;
+    margin: 0 5px;
+    background-color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+
+
+
+}
+section > a {
+    border: 1px solid #333 ;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+nav {
+   padding: 5px 2px;
+    background-color: #ccc;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+img {
+    padding: 0;
+}
+
+footer{
+    background-color:  #ddaa00;
+}
+header{
+    background-color:  #ddaa00;
+
+}
+p > a:hover{
+  color: lightsteelblue;
+    background-color: aquamarine;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    main {
+        flex-direction: column;
+    }
+
+    nav > a {
+
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
