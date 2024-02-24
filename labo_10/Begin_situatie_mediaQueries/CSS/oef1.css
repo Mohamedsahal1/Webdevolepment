@@ -1,12 +1,7 @@
-html {
-	box-sizing: border-box;
-}
-
-
 body {
 	font: 1.2em/1.2 Helvetica, aria, sans-serif;
 	margin: 0 3%;
-
+	background-color:#CCC
 }
 
 h1 {
@@ -25,70 +20,44 @@ img {
 figure {
 	background: black;
 	border-radius: 5px;
-	color: red;
+	color: white;
 	margin: 0 0 25px 0;
-	padding: 30px;
+	padding: 10px;
 	text-align: center;
-	
+	box-sizing: border-box;
+
 }
 
 figcaption {
 	font-size: .8em;
 }
 
-.row {
-	display: flex;
-	flex-wrap: wrap;
-}
-.column {
-	flex: 30%;
-	max-width: 33%;
-	padding: 0 4px;
-
-}
-.column img{
-	margin-top: 8px;
-	vertical-align: middle;
-	width: 100%;
-}
-@media screen and (max-width: 768px) {
-	.column {
-		flex: 100%;
-		max-width: 100%;
-	}
-
-}
-
 
 
 @media screen and (min-width: 768px) {
 	body {
-
-
-		background-color: blueviolet;
-
+		background-color: green;
+		margin:25px 6px;
 	}
-	.column {
-		flex: 45%;
-		max-width: 50%;
+	figure {
+		float: left;
+		width: 45%;
+		margin-right: 5%;
 	}
-
-
 }
 
 
 @media screen and (min-width: 992px) {
-
 	body {
-		background-color: greenyellow;
-
+		background-color: #b4d455;
+		margin:25px 6px;
+	}
+	figure {
+		float: left;
+		width: 30.8%;
+		margin-right: 2.5%;
 	}
 
-
-	.column {
-		flex: 32%;
-		max-width: 33%;
-	}
 
 }
 
