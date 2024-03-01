@@ -12,6 +12,21 @@ input, p {
 
 div{
     position: absolute;
-    left: 20%;
+    left: 25%;
     top: 5%;
 }
+
+main {
+    border: lightgray solid 5px;
+    border-radius: 20px;
+    width: 500px;
+}
+.slider{
+    appearance: none;
+    background-color: lightgray;
+    border-radius: 20px;
+    width: 200px;
+
+
+}
+
