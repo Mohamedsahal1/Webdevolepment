@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<form method="get">
+    <label class="line">First name*:<input type="text" placeholder="Your first name" autofocus required="required" name="firstName"/></label><br>
+    <label>Last name*:<input type="text" name="lastName" placeholder="Your last name" required="required"/></label>
+    <div>Which sport do you train?</div>
+
+    <label>Running
+    <input type="checkbox" name="check"/>
+    </label>
+    <br/>
+    <label>Swimmming
+    <input type="checkbox" name="checkb"/>
+    </label>
+    <br/>
+    <label>Rowing
+    <input type="checkbox" name="checkbox"/>
+    </label>
+    <div>What is your gender</div>
+    <label>
+    <input type="radio" name="radioAns"/>
+    Male</label>
+    <br/>
+    <label>
+    <input type="radio" name="radioAns"/>
+   Female</label>
+    <br>
+    <label>Favorite movie:
+    <input type="text" name="movie"/>
+    </label>
+    <br/><br/>
+    <label>Favorite quote:
+    <input type="text" name="quote" placeholder="Write your favorite quote"/>
+    </label>
+    <br/>
+    <label>Password*:
+    <input type="password" name="wachtwoord" required="required"/>
+    </label>
+    <br/><br/>
+    <label>Favorite food:
+    <select>
+        <option>Hamburger</option>
+        <option>Pizza</option>
+    </select>
+    </label>
+    <br/><br/>
+    <input type="file"/>
+    <br/><br/>
+    <label>Email adress:
+    <input type="text" placeholder="Enter your email adress" name="emailad"/>
+    </label>
+    <br/><br>
+    <label>Favorite site:
+    <input type="url" placeholder="Enter the URL of your favorite site" name="urlsite"/>
+    </label>
+    <br/><br/>
+    <label>Favorite number between 1-10:
+    <input type="number" min="1" max="10" name="aantal"/>
+    </label>
+    <br/><br/>
+    <label>Favorite number between 11-100:
+    <input type="range" min="11" max="1000" name="keuzenumbers"/>
+    </label>
+    <br/><br/>
+    <label>When were you born?
+    <input type="date" placeholder="Dag/Maand/Jaar" name="date"/>
+    </label>
+    <br/><br/>
+    <label>What is the zip-code number*:
+    <input type="text" pattern="[0-9]{4}" placeholder="9999" title="zipCode" required/>
+    </label>
+    <br/><br/>
+    <label>Search for something:
+    <input type="search" name="searchBox"/>
+    </label>
+    <br/><br/>
+    <label>What is your favorite color?
+    <input type="color" name="gekozenColor"/>
+    </label><br><br>
+    <input type="button" value="Submit" name="submit"/>
+
+
+
+
+
+
+
+
+
+
+</form>
+
+<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+</body>
+</html>

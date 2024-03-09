@@ -1,8 +1,12 @@
 const setup = () => {
     let sl = document.getElementsByClassName("slider");
-    sl[0].addEventListener("input", start);
-    sl[1].addEventListener("input", start1);
-    sl[2].addEventListener("input", start2);
+
+        sl[0].addEventListener("input", start);
+        sl[1].addEventListener("input", start1);
+        sl[2].addEventListener("input", start2);
+
+
+
 
     document.getElementById("roodKleur").addEventListener("input", verkleuren);
     document.getElementById("groenKleur").addEventListener("input", verkleuren);
