@@ -46,7 +46,7 @@ const andereManier=()=>{
 		document.getElementById("gesaved").removeChild(deButton);
 	}
 	deKind.addEventListener("click", function(event){
-		document.getElementById("swatch").style.backgroundColor=event.backgroundColor;
+		document.getElementById("swatch").style.backgroundColor=event.target.style.backgroundColor;
 	});
 }
 
