@@ -8,8 +8,7 @@ const initialize = () => {
 	}
 	update();
 	let s = document.getElementById("save");
-	s.addEventListener("click", save);
-
+	s.addEventListener("click", andereManier);
 
 };
 
@@ -23,35 +22,33 @@ const update = () => {
 	let swatch=document.getElementById("swatch");
 	swatch.style.backgroundColor="rgb("+red+","+green+","+blue+")";
 };
-const save=()=>{
+
+const andereManier=()=>{
 	let red=document.getElementById("sldRed").value; //input always value
 	let green=document.getElementById("sldGreen").value;
 	let blue=document.getElementById("sldBlue").value;
 
-	let an = document.createElement("li");
-	an.id = 'liID';
-     an.className="gesaved";
-	an.style.backgroundColor= "rgb("+red+","+green+","+blue+")";
-	document.getElementById("gesaved").appendChild(an);
-	let b = document.createElement("button");
-	b.innerHTML = "X";
-	b.className="punt";
-	document.getElementById("gesaved").appendChild(b);
-	b.onclick = function () {
-		document.getElementById("gesaved").removeChild(an);
-		document.getElementById("gesaved").removeChild(b);
+	let deParent = document.createElement("lu");
+	document.getElementById("gesaved").appendChild(deParent);
+	let deKind = document.createElement("li");
+	deKind.style.backgroundColor="rgb("+red+","+green+","+blue+")";
+	deParent.appendChild(deKind);
+	deKind.className="gesaved";
+	deParent.className="deParentC";
+	let deButton = document.createElement("button");
+	deKind.appendChild(deButton);
+	deButton.textContent = 'X';
+	deButton.className="deB"
 
+	deButton.onclick = function(){
+		document.getElementById("gesaved").removeChild(deParent);
+		document.getElementById("gesaved").removeChild(deKind);
+		document.getElementById("gesaved").removeChild(deButton);
 	}
-	let lis=document.getElementsByTagName("li");
-	for (let i=0;i<lis.length;i++) {
-		lis[i].addEventListener("click", klik);
-	}
-};
-const klik = (event) => {
-		document.getElementById("swatch").style.backgroundColor = event.target.style.backgroundColor;
-};
-
-
+	deKind.addEventListener("click", function(event){
+		document.getElementById("swatch").style.backgroundColor=event.backgroundColor;
+	});
+}
 
 
 window.addEventListener("load", initialize);

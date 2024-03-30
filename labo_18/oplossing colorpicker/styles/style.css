@@ -21,21 +21,15 @@ body{
 	width:5em;
 }
 .gesaved{
-	position: relative;
-	top: 25px;
 	border:solid 1px black;
-	margin:0 0 0 1em;
+	margin:1em 0 0 1em;
 	height:4em;
 	width:5em;
 	list-style: none;
-	display: inline;
-	padding-right: 85px;
-	padding-bottom: 50px;
-
-
-
 }
-
+.deParentC{
+	display: inline-block;
+}
 .punt{
 	position: relative;
 	top:50px;
@@ -46,11 +40,9 @@ body{
 	display: none;
 }
 
-
-
-
-
-
+.deB{
+	float: right;
+}
 
 
 .components {

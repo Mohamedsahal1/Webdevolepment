@@ -1,38 +1,35 @@
 const setup = () => {
-    let i = document.getElementById("ei");
-
-    for(let m = 0; i.options < 2; m++){
-        m.addEventListener("click", uitvoeren);
-    }
-//i.addEventListener("click", uitvoeren)
+    document.getElementById("ei").onchange = op2;
 }
-const uitvoeren=()=>{
-    let option = document.getElementById("ei");
-    let foto = document.getElementsByClassName("hidden");
-    let t = document.getElementById("note");
-
-    for(let i = 0; i<2; i++){
-        if(option[1].selected){
-            foto[0].style.
-            t.textContent = "Hierboven, een met een ei";
-
-        }else if(option[2].selected){
-            foto[0].style.backgroundImage = "without-egg.png";
-            t.textContent = "Hierboven, een zonder  ei";
-        }
+const op2=()=>{
+    let textIn = document.getElementById("note");
+    let cl = document.getElementById("img");
+    let select = document.getElementById("ei").value;
+    if (select === "o2") {
+        cl.classList.remove("hidden");
+        cl.classList.add("with-egg");
+        textIn.textContent = "Hierboven, een kip met  ei";
+        tellenA();
+    }else if(select === "o3"){
+        cl.classList.remove("hidden");
+        cl.classList.remove("with-egg");
+        cl.classList.add("img");
+        textIn.textContent = "Hierboven, een kip zonder  ei";
+        tellenA();
     }
-    tellen();
 }
-
-const tellen =()=>{
-    let text = document.getElementById("note");
+const tellenA=()=>{
+    let text = document.getElementById("note").innerHTML;
     let letter = document.getElementById("textinput").value;
     let count = 0;
-    for(let i = 0; i<text.length; i++){
+    for(let i =0; i <text.length; i++){
         if(text[i] === letter){
             count++;
         }
     }
-    text.textContent += "\n"+ "Letter" + letter.innerHTML + "komt" + count + "keer voor in bovenstaande zin.";
+    document.getElementById("note").innerHTML += "<br/>" +"Letter " + letter + " komt " + count + " keer voor in bovenstaande zin.";
 }
+
+
+
 window.addEventListener("load", setup);

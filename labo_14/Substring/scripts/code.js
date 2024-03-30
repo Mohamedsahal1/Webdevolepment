@@ -3,14 +3,9 @@ let substringW = document.getElementById("substringTwee");
 substringW.addEventListener("click",substringWoord );
 }
 const substringWoord=()=> {
-
-    let beginIndex = parseInt(document.getElementById("numberLinks").value);
-    let eindIndex =  parseInt(document.getElementById("numberRechts").value);
-   let m = document.getElementById("textInput").innerHTML;
-
-        m.substring(2,4);
-    document.getElementById("textOutput").innerHTML = m;
-
-
+    let beginIndex = document.getElementById("numberLinks").value;
+    let eindIndex =  document.getElementById("numberRechts").value;
+    let m = document.getElementById("textInput").value;
+    document.getElementById("textOutput").innerHTML += m.substring(beginIndex,eindIndex);
 }
 window.addEventListener("load", setup);
