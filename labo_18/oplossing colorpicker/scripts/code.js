@@ -28,7 +28,7 @@ const andereManier=()=>{
 	let green=document.getElementById("sldGreen").value;
 	let blue=document.getElementById("sldBlue").value;
 
-	let deParent = document.createElement("lu");
+	let deParent = document.createElement("ul");
 	document.getElementById("gesaved").appendChild(deParent);
 	let deKind = document.createElement("li");
 	deKind.style.backgroundColor="rgb("+red+","+green+","+blue+")";
@@ -42,8 +42,8 @@ const andereManier=()=>{
 
 	deButton.onclick = function(){
 		document.getElementById("gesaved").removeChild(deParent);
-		document.getElementById("gesaved").removeChild(deKind);
-		document.getElementById("gesaved").removeChild(deButton);
+		deParent.removeChild(deKind);
+		deKind.removeChild(deButton);
 	}
 	deKind.addEventListener("click", function(event){
 		document.getElementById("swatch").style.backgroundColor=event.target.style.backgroundColor;
