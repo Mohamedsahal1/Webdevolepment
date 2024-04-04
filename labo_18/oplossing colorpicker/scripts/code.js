@@ -27,7 +27,6 @@ const andereManier=()=>{
 	let red=document.getElementById("sldRed").value; //input always value
 	let green=document.getElementById("sldGreen").value;
 	let blue=document.getElementById("sldBlue").value;
-
 	let deParent = document.createElement("ul");
 	document.getElementById("gesaved").appendChild(deParent);
 	let deKind = document.createElement("li");
@@ -35,20 +34,22 @@ const andereManier=()=>{
 	deParent.appendChild(deKind);
 	deKind.className="gesaved";
 	deParent.className="deParentC";
+
 	let deButton = document.createElement("button");
 	deKind.appendChild(deButton);
 	deButton.textContent = 'X';
-	deButton.className="deB"
-
+	deButton.className="deB";
 	deButton.onclick = function(){
-		document.getElementById("gesaved").removeChild(deParent);
-		deParent.removeChild(deKind);
 		deKind.removeChild(deButton);
-	}
+		deParent.removeChild(deKind);
+		document.getElementById("gesaved").removeChild(deParent);
+	};
 	deKind.addEventListener("click", function(event){
 		document.getElementById("swatch").style.backgroundColor=event.target.style.backgroundColor;
 	});
-}
+};
+
+
 
 
 window.addEventListener("load", initialize);

@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    background: #ebe8e8;
+
+}
+body {
+
+
+    display: flex;
+
+}
+
+.game {
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    perspective: 1000px;
+
+}
+.card {
+    width: 30% ;
+    height:25%;
+    position: relative;
+    margin: 5px;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+
+.card:active {
+    transform: scale(.97);
+    transition: .2s;
+}
+.voorkant,
+.achterkant {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: bisque;
+    backface-visibility: hidden;
+
+}
+.card.flip{
+    transform: rotateY(180deg);
+}
+.voorkant {
+    transform: rotateY(180deg);
+}

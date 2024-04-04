@@ -10,42 +10,53 @@ let global= {
 
 const setup = () => {
     let field = document.getElementById("playField");
-    let img0 = document.getElementsByClassName("issa")[0];
     let knop = document.getElementById("knop");
     field.addEventListener("click", start);
     knop.addEventListener("click", start);
     timeoutId = setInterval(start, 10000);
     //img0.addEventListener("click", alerT);
+    field.style.width = window.innerWidth +"px";
+    field.style.height = window.innerHeight +"px";
+
 };
 
-const alerT=()=>{
-    alert("Game over");
-}
+
 
 
 
 const start=()=>{
+    let field = document.getElementById("playField");
     let img0 = document.getElementById("img0");
+    let maxLeft = field.clientWidth - img0.offsetWidth;
+    let heigthMax = field.clientHeight - img0.offsetHeight;
+    let left = Math.floor(Math.random() * maxLeft);
+    let top = Math.floor(Math.random() * heigthMax);
+
     let rand =  Math.random() * 5;
     let imgP = global.IMAGE_PATH_PREFIX;
     let imgS = global.IMAGE_PATH_SUFFIX;
     let innerW = window.innerWidth;
     let innerH = window.innerHeight;
-    for(let i =0; i< rand; i++){
+
+
+    for(let i =0; i < rand; i++){
         img0.src= imgP+i+imgS;
+        img0.alt = "image"+i;
         img0.style.position = "absolute";
-        img0.style.top = (Math.random() * innerH) + "px";
-        img0.style.bottom = (Math.random() * innerH) + "px";
-        img0.style.left = (Math.random() * innerW) + "px";
-        img0.style.right = (Math.random() * innerW) + "px";
-        if(rand === 0){
-            img0.click=function (){
-                alerT();
+        img0.style.top = top +"px";
+        img0.style.left = left+"px";
+            img0.onclick=function (){
+                let an = global.score++
+                document.getElementById("hits").innerHTML =an.toString();
+                if(img0.alt === "image0") {
+                    alert("Game over");
+                    clearInterval(timeoutId);
+                    img0.src=" ";
+                }
+
             }
+
         }
-    }
-
-
 
 }
 

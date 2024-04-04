@@ -20,16 +20,22 @@ body{
 	height:4em;
 	width:5em;
 }
+
+
+
 .gesaved{
 	border:solid 1px black;
 	margin:0 0 -1em -1em;
-
 	height:4em;
 	width:5em;
-	list-style: none;
 }
+
+
 .deParentC{
 	display: inline-block;
+	list-style: none;
+
+
 }
 .punt{
 	position: relative;
