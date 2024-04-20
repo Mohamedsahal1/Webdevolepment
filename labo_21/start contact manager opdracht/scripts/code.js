@@ -15,9 +15,7 @@ const bewaarBewerktePersoon = () => {
     let geboorte= document.getElementById("txtGeboorteDatum").value;
     let email = document.getElementById("txtEmail").value;
     let kinderen= document.getElementById("txtAantalKinderen").value;
-
-
-
+    
             let persoon ={
                 firstName : voornaam,
                 lastName : achternaam,
@@ -31,7 +29,11 @@ const bewaarBewerktePersoon = () => {
     if(!s.options[s.selectedIndex]){
             let op = document.createElement("option");
             op.innerHTML = persoon.firstName +" " + persoon.lastName;
-            op.id = "option1";
+            for(let a = 0; a < personen.length; a++){
+                op.id = a.toString();
+            }
+           // op.id = "option1";
+
             s.appendChild(op);
         }else {
 
@@ -43,8 +45,9 @@ const bewaarBewerktePersoon = () => {
                 pers.birthdate = document.getElementById("txtGeboorteDatum").value;
                 pers.adres = document.getElementById("txtEmail").value;
                 pers.children = document.getElementById("txtAantalKinderen").value;
-                document.getElementById("option1").innerHTML = persoon.firstName +" " + persoon.lastName;
-
+                document.getElementById(s.options.selectedIndex.toString()).innerHTML =
+                    document.getElementById("txtVoornaam").value + " "+
+                    document.getElementById("txtFamilienaam").value;
             }
         }
 
