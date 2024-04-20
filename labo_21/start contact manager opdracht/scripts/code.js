@@ -75,12 +75,16 @@ const invullen=()=>{
 // Event listener (btnNieuw click)
 const bewerkNieuwePersoon = () => {
     console.log("Klik op de knop nieuw");
+    let s = document.getElementById("lstPersonen");
+
 
     document.getElementById("txtVoornaam").value = "";
  document.getElementById("txtFamilienaam").value= "";
 document.getElementById("txtGeboorteDatum").value= "";
     document.getElementById("txtEmail").value= "";
     document.getElementById("txtAantalKinderen").value= "";
+    s.options.selectedIndex = -1;
+
 
     // Zet de user interface klaar om de gegevens van een nieuwe persoon in te voeren
 };
