@@ -1,0 +1,66 @@
+.slider {
+    vertical-align:middle;
+}
+
+.component span:nth-of-type(2) {
+    display:inline-block;
+    width:3em;
+    text-align:right;
+}
+body{
+    margin: auto;
+}
+
+
+.swatch {
+    display:inline-block;
+    border:solid 1px black;
+    border-radius:5px;
+    margin:0 0 0 1em;
+    height:4em;
+    width:5em;
+}
+
+
+
+.gesaved{
+    border:solid 1px black;
+    margin:0 0 -1em -1em;
+    height:4em;
+    width:5em;
+}
+
+
+.deParentC{
+    display: inline-block;
+    list-style: none;
+
+
+}
+.punt{
+    position: relative;
+    top:50px;
+    left: -25px;
+
+}
+.displayNone{
+    display: none;
+}
+
+.deB{
+    float: right;
+}
+
+
+.components {
+    display:inline-block;
+    height:100%;
+}
+
+.colorPicker {
+    display:inline-block;
+    border:solid 5px lightgrey;
+    border-radius:10px;
+    padding:10px;
+}
+

@@ -83,7 +83,11 @@ const bewerkNieuwePersoon = () => {
 document.getElementById("txtGeboorteDatum").value= "";
     document.getElementById("txtEmail").value= "";
     document.getElementById("txtAantalKinderen").value= "";
-    s.options.selectedIndex = -1;
+    for(let i =0; i< s.length; i++){
+        s[i].selected = false;
+    }
+
+    //s.options.selectedIndex = -1;
 
 
     // Zet de user interface klaar om de gegevens van een nieuwe persoon in te voeren
