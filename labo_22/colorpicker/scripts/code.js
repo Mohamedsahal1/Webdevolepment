@@ -6,13 +6,14 @@ const initialize = () => {
         sliders[i].addEventListener("change", update);
         sliders[i].addEventListener("input", update);
     }
+    let s = document.getElementById("save");
+    s.addEventListener("click", andereManier);
 
     restoreSliderValues();
     restoreSwatches();
     update();
 
-    let s = document.getElementById("save");
-    s.addEventListener("click", andereManier);
+
 
 };
 
@@ -30,7 +31,6 @@ const update = () => {
 
 const andereManier=()=>{
     let swatch=document.getElementById("swatch");
-
     let red=document.getElementById("sldRed").value; //input always value
     let green=document.getElementById("sldGreen").value;
     let blue=document.getElementById("sldBlue").value;
