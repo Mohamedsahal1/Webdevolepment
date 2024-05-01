@@ -140,6 +140,8 @@ const bewaarHistory=()=>{
 
         localStorage.setItem("opgeslaan", JSON.stringify(startpages));
 
+        textContent.value = "";
+
     }else {
         alert("Unknown Command");
     }
