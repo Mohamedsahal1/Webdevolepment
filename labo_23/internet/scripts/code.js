@@ -41,7 +41,7 @@ const bewaarHistory=()=>{
         let b = document.createElement("a");
         b.role = "button";
         b.className = "btn btn-dark btn-lg active";
-        b.innerHTML = "Go";
+        b.innerHTML = "Go!";
         let divForB = document.createElement("div");
         divForB.classList.add("paLef");
         divForB.appendChild(b);
