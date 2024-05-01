@@ -1,0 +1,21 @@
+
+body {
+    margin: auto;
+
+}
+
+#knop{
+    width: 100%;
+    background: green;
+}
+#textKnop{
+    width: 100%;
+}
+
+.paLef{
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.plc {
+    padding-bottom: 15px;
+}
