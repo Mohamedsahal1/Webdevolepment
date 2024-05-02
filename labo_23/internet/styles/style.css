@@ -7,9 +7,13 @@ body {
 #knop{
     width: 100%;
     background: green;
+    padding-bottom: 10px;
+
 }
 #textKnop{
     width: 100%;
+    padding-bottom: 10px;
+
 }
 
 .paLef{
