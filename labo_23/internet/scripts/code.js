@@ -3,21 +3,14 @@ const setup = () => {
     refresh();
     let kn = document.getElementById("knop");
     kn.addEventListener("click", bewaarHistory);
-
 }
-
-
 
 const bewaarHistory=()=>{
     let textContent = document.getElementById("textKnop");
     let textValue = textContent.value;
     let textSubs = textValue.substring(3,textValue.length);
-   // let divContainer = document.getElementById("divCont");
-
     let splittedText = textSubs.split(" ");
-
     let hr = document.createElement("a");
-
 
     if(textValue.charAt(0) === "/" && (textValue.charAt(1) === "y" || textValue.charAt(1) === "t" || textValue.charAt(1) === "i" || textValue.charAt(1) === "g")) {
 
@@ -31,21 +24,15 @@ const bewaarHistory=()=>{
 
         add(divForB,divCard,divCol,divLayout, b, t, h);
 
-
         if (textValue.charAt(1) === "y") {
-            divCard.style.backgroundColor = "red";
-            h.textContent = "Youtube";
-            t.textContent = textValue.substring(2, textValue.length);
+            secondSearch(divCard, "#ff0000", h, "Youtube",t, textValue, b, "#282828")
             search(splittedText, b,textSubs, "https://www.youtube.com/results?search_query=", hr);
         } else if (textValue.charAt(1) === "i") {
-            firstSearch(divCard, "purple", h, "Instagram", t, textValue, hr, textSubs, b, "orange", "https://www.instagram.com/explore/tags/");
+            firstSearch(divCard, "#c32aa3", h, "Instagram", t, textValue, hr, textSubs, b, "#f46f30", "https://www.instagram.com/explore/tags/");
         } else if (textValue.charAt(1) === "t") {
-            firstSearch(divCard, "dodgerblue", h, "Instagram", t, textValue, hr, textSubs, b, "indianorange", "https://twitter.com/hashtag/");
+            firstSearch(divCard, "#1da1f2", h, "Twitter", t, textValue, hr, textSubs, b, "#000000", "https://twitter.com/hashtag/");
         } else if (textValue.charAt(1) === "g") {
-            divCard.style.backgroundColor = "dodgerblue";
-            h.textContent = "Google";
-            t.textContent = textValue.substring(2, textValue.length);
-            b.style.backgroundColor = "indianred";
+            secondSearch(divCard, "#ea4335", h, "Google",t, textValue, b, "#fbbc05")
             search(splittedText, b,textSubs, "https://www.google.com/search?q=", hr);
         }
         let obj ={
@@ -82,14 +69,13 @@ const refresh=()=>{
             add(divForB,divCard,divCol,divLayout, b, t, h);
 
             if (restoredObjects[i].title === "Youtube") {
-                retrieve( divCard, h, t, b,"red","Youtube",restoredObjects[i], "black");
+                retrieve( divCard, h, t, b,"#ff0000","Youtube",restoredObjects[i], "#282828");
             } else if (restoredObjects[i].title === "Instagram") {
-                retrieve( divCard, h, t, b,"purple","Instagram",restoredObjects[i], "orange");
-
+                retrieve( divCard, h, t, b,"#c32aa3","Instagram",restoredObjects[i], "#f46f30");
             } else if (restoredObjects[i].title === "Twitter") {
-                retrieve( divCard, h, t, b,"dodgerblue","Twitter",restoredObjects[i], "indianorange");
+                retrieve( divCard, h, t, b,"#1da1f2","Twitter",restoredObjects[i], "#000000");
             } else if (restoredObjects[i].title === "Google") {
-                retrieve( divCard, h, t, b,"dodgerblue","Google",restoredObjects[i], "indianred");
+                retrieve( divCard, h, t, b,"#ea4335","Google",restoredObjects[i], "#fbbc05");
             }
         }
     }
@@ -158,6 +144,12 @@ const firstSearch=(divCard, divColor, h, hCont, t, textValue, hr, textSubs, b, b
     }
     hr.href = url + textSubs;
     window.open(url + textSubs);
+    b.style.backgroundColor = bColor;
+}
+const secondSearch=(divCard, divCardColor, h, hCont,t, textValue, b, bColor)=>{
+    divCard.style.backgroundColor = divCardColor;
+    h.textContent = hCont;
+    t.textContent = textValue.substring(2, textValue.length);
     b.style.backgroundColor = bColor;
 }
 
